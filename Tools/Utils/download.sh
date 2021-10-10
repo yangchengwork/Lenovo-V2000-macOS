@@ -47,6 +47,7 @@ function download() {
     file_name=$(basename "$scrape_url")
   fi
 
+  # echo "$url"
   printDownloadMsg "$index" "$file_name" "$output_dir"
   curl -#L "$url" -o "${output_dir}/${file_name}"
 
