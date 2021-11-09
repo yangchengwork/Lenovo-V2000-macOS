@@ -1241,7 +1241,7 @@
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>5</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -1421,7 +1421,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-lilubetaall -no_compat_check -v keepsyms=1 vsmcgen=1 alcid=28</string>
+				<string>-lilubetaall -no_compat_check keepsyms=1 vsmcgen=1 alcid=28</string>
 				<key>csr-active-config</key>
 				<data>ZwAAAA==</data>
 				<key>prev-lang:kbd</key>
