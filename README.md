@@ -7,7 +7,7 @@ CPU | Intel(R) Core(TM) i7-4510U CPU @ 2.00GHz `可睿频至 3.1GHz`
 独显 | NVIDIA GeForce 840M
 声卡 | Conexant CX20751/2
 有线 | Realtek RTL8168/8111 PCI-E `Realtek RTL8168GU`
-无线和蓝牙| Intel 3160 AC &nbsp;--<sup>更换为</sup>-->&nbsp; Broadcom BCM4352 802.11AC
+无线和蓝牙| Intel 3160 AC
 触控板 | ELAN
 
 ### 概述
@@ -125,3 +125,13 @@ sudo mkdir /var/vm/sleepimage
 
 ### 致谢
 acidanthera, lvs1974, RehabMan, the-braveknight, vit9696, etc.
+
+# 自己使用
+因为个人是使用同一个硬件控制3个系统，所以有一点自己的体会
+## Win10的默认启动
+当EFI目录下有一个Microsoft目录就会自动进入Windows 10，此点基本无解。现在使用Arch的Systemd-boot，将Microsoft修改为Win10，使用systemd-boot来管理启动
+## MacOS的双屏显示
+因为个人习惯是使用外接多一个HDMI显示器，但在默认的显示配置中是无法使用。所以自己通过hackintool，尝试用HD4600的配置驱动起来。同时有一个奇怪的情况，这时BIOS使用UEFI会主屏花屏，但副屏正常。因为个人经常会多系统使用，所以就使用UEFI，当登录MacOS后在副屏中通过系统设置，改变一次主屏的分辨率，就可以让主副屏都正常
+## 遗留问题
+### 现在复位时无法找到EFI，只能重新开机可以，具体原因不明。
+### MacOS睡眠后唤醒会重新启动
