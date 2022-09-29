@@ -132,6 +132,8 @@ acidanthera, lvs1974, RehabMan, the-braveknight, vit9696, etc.
 当EFI目录下有一个Microsoft目录就会自动进入Windows 10，此点基本无解。现在使用Arch的Systemd-boot，将Microsoft修改为Win10，使用systemd-boot来管理启动
 ## MacOS的双屏显示
 因为个人习惯是使用外接多一个HDMI显示器，但在默认的显示配置中是无法使用。所以自己通过hackintool，尝试用HD4600的配置驱动起来。同时有一个奇怪的情况，这时BIOS使用UEFI会主屏花屏，但副屏正常。因为个人经常会多系统使用，所以就使用UEFI，当登录MacOS后在副屏中通过系统设置，改变一次主屏的分辨率，就可以让主副屏都正常
+## Monterey 蓝牙
+在升级到Monterey后蓝牙无法打开，反复尝试后可以打开蓝牙了。参考https://zhuanlan.zhihu.com/p/404324240可以使用了
 ## 遗留问题
 ### 现在复位时无法找到EFI，只能重新开机可以，具体原因不明。
 ### MacOS睡眠后唤醒会重新启动
